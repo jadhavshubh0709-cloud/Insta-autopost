@@ -1,0 +1,9 @@
+{"tag": "PROMPT #4", "music": "dramatic",
+ "caption": "Your LinkedIn post vs. a post people actually read 👀 Copy this prompt and turn any achievement into a great post.\n\nComment \"PROMPT\" and I'll DM you more 📩\n\n#linkedintips #personalbranding #aiprompts #careergrowth #jobsearch #chatgpt #aihacks #smartwork",
+ "scenes": [
+  {"type": "hook", "lines": ["Your LinkedIn post", "gets 3 likes?", "Fix it with AI"], "accent": 2, "dur": 3},
+  {"type": "text", "title": "“Happy to share I completed a certification.”", "text": "Boring. Scrolled past.", "color": "white", "size": 84, "dur": 3},
+  {"type": "chat", "title": "Copy this prompt", "text": "Turn this into an engaging LinkedIn post: [your achievement]. Start with a hook line, share 1 lesson I learned, keep it under 120 words, end with a question for readers.", "dur": 7},
+  {"type": "result", "title": "AI's version:", "text": "I almost quit this course in week 2. Today I'm certified. The lesson? Consistency beats motivation. 20 minutes a day did what weekend marathons never could. What's one skill you're building this year?", "footer": "Now people comment.", "dur": 5},
+  {"type": "cta", "big": "SAVE this", "sub": "before your next post", "pill": "Comment PROMPT", "pill_sub": "for more LinkedIn prompts", "dur": 4}
+ ]}

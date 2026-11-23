@@ -1,0 +1,10 @@
+{"tag": "STUDENT HACKS", "music": "upbeat",
+ "caption": "Study smarter, not longer 📚 4 ways students are using AI the right way. Which one will you try? 👇\n\nSave for exam week 🔖\n\n#studenthacks #studytips #aiforstudents #examprep #chatgpt #notebooklm #college #smartwork",
+ "scenes": [
+  {"type": "hook", "lines": ["4 ways to use AI", "to study 2x faster", "(without cheating)"], "accent": 1, "dur": 3},
+  {"type": "item", "num": 1, "title": "Explain like I'm 10", "text": "Paste a hard topic and ask AI to explain it simply, with an example.", "tag": "Concepts click faster", "dur": 3.2},
+  {"type": "item", "num": 2, "title": "Quiz me", "text": "Give AI your notes and ask for 10 tricky questions. Answer without looking.", "tag": "Active recall = memory", "dur": 3.2},
+  {"type": "item", "num": 3, "title": "Chat with your PDFs", "text": "Upload notes to a tool like NotebookLM and ask questions from them.", "tag": "Your own AI tutor", "dur": 3.2},
+  {"type": "item", "num": 4, "title": "Make a study plan", "text": "Tell AI your exam date and syllabus. Get a day-by-day plan.", "tag": "No more last-night panic", "dur": 3.2},
+  {"type": "cta", "big": "SAVE this", "sub": "for exam week", "pill": "Share with a friend", "pill_sub": "who studies the night before", "dur": 4}
+ ]}

@@ -1,0 +1,8 @@
+{"tag": "PROMPT #3", "music": "chill",
+ "caption": "Never stress over a leave email again 😌 Copy this prompt, change the details, done in 10 seconds.\n\nComment \"PROMPT\" for 10 more office prompts 📩\n\n#aiprompts #chatgpt #officelife #emailtips #worksmarter #corporatelife #aihacks #smartwork",
+ "scenes": [
+  {"type": "hook", "lines": ["Stop writing", "leave emails", "yourself"], "accent": 1, "sub": "(this takes 10 seconds)", "dur": 3},
+  {"type": "chat", "title": "Copy this prompt", "text": "Write a short, polite leave request email to my manager for [dates]. Reason: [reason]. Mention my work is covered by [colleague] and I'll be reachable for urgent issues. Professional but warm tone.", "dur": 7},
+  {"type": "result", "title": "AI's version:", "text": "Hi Priya, I'd like to request leave from 2-4 Dec for a family function. Rahul will cover my tasks, and I'll be reachable for anything urgent. Thank you!", "footer": "Approved in 2 minutes.", "tip": "Tip: always fill in the [brackets]", "dur": 4.5},
+  {"type": "cta", "big": "SAVE this", "sub": "for your next leave", "pill": "Comment PROMPT", "pill_sub": "for 10 more office prompts", "dur": 4}
+ ]}

@@ -1,0 +1,11 @@
+{"tag": "AI HACK #5", "music": "chill",
+ "caption": "The 3-line prompt formula that makes any AI answer 10x better 🧠 Role + Task + Format. Try it today!\n\nSave this 🔖 and follow for daily AI hacks\n\n#aiprompts #promptengineering #chatgpt #claudeai #aitips #productivity #aihacks #smartwork",
+ "scenes": [
+  {"type": "hook", "lines": ["Your AI answers", "are bad because", "of THIS"], "accent": 2, "dur": 3},
+  {"type": "text", "title": "“Write about marketing”", "text": "Vague question = vague answer", "color": "red", "size": 96, "dur": 3},
+  {"type": "item", "num": 1, "title": "Role", "text": "“Act as a marketing expert for small Indian businesses.”", "dur": 3},
+  {"type": "item", "num": 2, "title": "Task", "text": "“Give me 5 low-budget Diwali promotion ideas for a bakery.”", "dur": 3},
+  {"type": "item", "num": 3, "title": "Format", "text": "“As a table: idea, cost, expected result.”", "dur": 3},
+  {"type": "text", "title": "Role + Task + Format", "text": "Works in any AI tool", "color": "accent", "dur": 3},
+  {"type": "cta", "big": "SAVE this", "sub": "use it on every prompt", "pill": "Follow", "pill_sub": "for daily AI hacks", "dur": 4}
+ ]}

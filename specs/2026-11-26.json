@@ -1,0 +1,10 @@
+{"tag": "OFFICE LIFE", "music": "funky",
+ "caption": "Every. Single. Time. 😭 Tag that colleague who always says \"quick call\" 👇\n\n#officelife #corporatememes #itlife #wfh #corporatehumour #techjobs #relatable #smartwork",
+ "scenes": [
+  {"type": "text", "title": "5:59 PM", "text": "Laptop bag packed. Shoes on.", "color": "accent", "size": 150, "dur": 2.5},
+  {"type": "text", "title": "Manager: “Hey, quick call?”", "color": "white", "dur": 2.5},
+  {"type": "text", "title": "The “quick call”:", "text": "", "color": "muted", "dur": 1.8},
+  {"type": "text", "title": "47 minutes", "text": "and 3 new tasks later…", "color": "red", "size": 140, "dur": 3},
+  {"type": "text", "title": "Tag that colleague", "text": "who says “just 5 minutes”", "color": "accent", "dur": 3},
+  {"type": "cta", "big": "FOLLOW", "sub": "for AI hacks + office life", "pill": "Tag a colleague", "pill_sub": "they need to see this", "follow": "@smartwork.ai.in", "dur": 3.5}
+ ]}

@@ -1,0 +1,9 @@
+{"tag": "OFFICE LIFE", "music": "funky",
+ "caption": "Appraisal season be like 😅 Which one are you? Comment 1, 2 or 3 👇\n\n#appraisal #officelife #corporatememes #itlife #corporatehumour #relatable #techjobs #smartwork",
+ "scenes": [
+  {"type": "hook", "lines": ["Appraisal season", "3 types of", "employees"], "accent": 0, "dur": 3},
+  {"type": "item", "num": 1, "title": "The Silent Worker", "text": "Did everything all year. Can't remember any of it.", "tag": "“I… worked?”", "dur": 3},
+  {"type": "item", "num": 2, "title": "The Storyteller", "text": "Fixed one typo. Calls it “improving documentation quality by 100%”.", "tag": "Gets the hike", "dur": 3.2},
+  {"type": "item", "num": 3, "title": "The AI-smart one", "text": "Kept a weekly win list and let AI turn it into a clean self-review.", "tag": "Work smart ✅", "dur": 3.2},
+  {"type": "cta", "big": "Be No. 3", "sub": "follow for the prompt that does it", "pill": "Comment 1, 2 or 3", "pill_sub": "which one are you?", "dur": 4}
+ ]}
