@@ -45,6 +45,12 @@ public class PostReel {
         String igUserId = env("IG_USER_ID", "");
         if (igUserId.isEmpty()) igUserId = lookupIgUserId(api, token);
         System.out.println("Instagram account id: " + igUserId);
+        String who = get(api + "/" + igUserId + "?fields=id,username&access_token=" + enc(token));
+        System.out.println("Account check: " + who);
+        if (env("DRY_RUN", "false").equals("true")) {
+            System.out.println("DRY_RUN: token and account OK, nothing posted.");
+            return;
+        }
 
         Path dir = Path.of("reels", date);
         Path captionFile = dir.resolve("caption.txt");

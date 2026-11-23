@@ -8,6 +8,10 @@ on:
       post_date:
         description: "Date to post (YYYY-MM-DD). Leave empty for today (IST)."
         required: false
+      dry_run:
+        description: "Only check token + account, don't post"
+        type: boolean
+        default: false
 
 jobs:
   post:
@@ -21,9 +25,10 @@ jobs:
       - name: Publish reel
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}        # optional; looked up automatically if empty
+          IG_USER_ID: "1364272076779284"                  # @smartwork.ai.in (from Business Suite)
           IG_BUSINESS_ID: "1167254632519883"              # SmartWork AI business portfolio
           IG_USERNAME: "smartwork.ai.in"
           PAGES_BASE_URL: "https://jadhavshubh0709-cloud.github.io/Insta-autopost"
           POST_DATE: ${{ github.event.inputs.post_date }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
         run: java src/PostReel.java
