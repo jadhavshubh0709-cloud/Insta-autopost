@@ -39,3 +39,8 @@ The Instagram account id is looked up automatically. If the lookup fails, the lo
 - The Content Publishing API currently allows up to 100 posts in 24 hours, far more than one a day.
 - If a post fails, open the failed run under **Actions** to see the API error. A common cause is the Pages URL not being deployed yet.
 - Keep your token only in GitHub Secrets. Never commit it or paste it in chat.
+
+## Music
+`music/` holds original background tracks composed in code by `tools/make_music.py` (no samples, no licensing issues):
+`upbeat` (AI hacks), `chill` (tips/lists), `dramatic` (before vs after), `funky` (memes).
+Each reel gets the track that fits its content, mixed into the mp4 before it is pushed, because the API can't add songs from Instagram's music library.
