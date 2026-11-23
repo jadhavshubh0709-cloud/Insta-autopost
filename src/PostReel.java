@@ -21,10 +21,13 @@ import java.util.stream.Collectors;
  * The mp4 must be reachable on a public HTTPS URL (GitHub Pages):  PAGES_BASE_URL/reels/YYYY-MM-DD/reel.mp4
  *
  * Env vars:
- *   IG_ACCESS_TOKEN  long-lived Instagram user token (instagram_business_content_publish)
- *   IG_USER_ID       your Instagram professional account id (from GET /me?fields=user_id)
+ *   IG_ACCESS_TOKEN  never-expiring System User token (instagram_basic + instagram_content_publish)
+ *   IG_USER_ID       optional: Instagram account id. If empty, it is looked up from IG_BUSINESS_ID + IG_USERNAME
+ *   IG_BUSINESS_ID   business portfolio id (used for the lookup)
+ *   IG_USERNAME      Instagram username without @ (used for the lookup)
  *   PAGES_BASE_URL   e.g. https://yourname.github.io/insta-autopost
  *   POST_DATE        optional, YYYY-MM-DD (defaults to today in Asia/Kolkata)
+ *   GRAPH_HOST       optional, default graph.facebook.com
  *   GRAPH_VERSION    optional, default v25.0
  *
  * Run (Java 11+):  java src/PostReel.java
@@ -35,11 +38,13 @@ public class PostReel {
 
     public static void main(String[] args) throws Exception {
         String token = required("IG_ACCESS_TOKEN");
-        String igUserId = required("IG_USER_ID");
         String base = required("PAGES_BASE_URL").replaceAll("/+$", "");
         String version = env("GRAPH_VERSION", "v25.0");
         String date = env("POST_DATE", LocalDate.now(ZoneId.of("Asia/Kolkata")).toString());
-        String api = "https://graph.instagram.com/" + version;
+        String api = "https://" + env("GRAPH_HOST", "graph.facebook.com") + "/" + version;
+        String igUserId = env("IG_USER_ID", "");
+        if (igUserId.isEmpty()) igUserId = lookupIgUserId(api, token);
+        System.out.println("Instagram account id: " + igUserId);
 
         Path dir = Path.of("reels", date);
         Path captionFile = dir.resolve("caption.txt");
@@ -79,6 +84,28 @@ public class PostReel {
         String published = post(api + "/" + igUserId + "/media_publish",
                 Map.of("creation_id", containerId, "access_token", token));
         System.out.println("Published! Media id: " + field(published, "id"));
+    }
+
+    /** Finds the Instagram account id owned by the business portfolio, matching IG_USERNAME. */
+    private static String lookupIgUserId(String api, String token) throws Exception {
+        String biz = required("IG_BUSINESS_ID");
+        String username = required("IG_USERNAME").replace("@", "");
+        for (String edge : new String[]{"owned_instagram_accounts", "instagram_accounts"}) {
+            try {
+                String res = get(api + "/" + biz + "/" + edge + "?fields=id,username&access_token=" + enc(token));
+                Matcher m = Pattern.compile("\\{[^{}]*\"id\"\\s*:\\s*\"(\\d+)\"[^{}]*\\}").matcher(res);
+                String first = null;
+                while (m.find()) {
+                    if (first == null) first = m.group(1);
+                    if (m.group().contains("\"" + username + "\"")) return m.group(1);
+                }
+                if (first != null) return first;
+                System.out.println("  " + edge + ": no accounts in " + res);
+            } catch (IllegalStateException e) {
+                System.out.println("  " + edge + " lookup failed: " + e.getMessage());
+            }
+        }
+        throw new IllegalStateException("Could not find the Instagram account id. Set the IG_USER_ID secret manually.");
     }
 
     private static String post(String url, Map<String, String> form) throws Exception {

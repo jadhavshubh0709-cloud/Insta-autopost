@@ -21,7 +21,9 @@ jobs:
       - name: Publish reel
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
-          PAGES_BASE_URL: ${{ vars.PAGES_BASE_URL }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}        # optional; looked up automatically if empty
+          IG_BUSINESS_ID: "1167254632519883"              # SmartWork AI business portfolio
+          IG_USERNAME: "smartwork.ai.in"
+          PAGES_BASE_URL: "https://jadhavshubh0709-cloud.github.io/Insta-autopost"
           POST_DATE: ${{ github.event.inputs.post_date }}
         run: java src/PostReel.java
