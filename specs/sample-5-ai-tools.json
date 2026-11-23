@@ -1,0 +1,14 @@
+{
+  "tag": "AI TOOLS #2",
+  "music": "upbeat",
+  "caption": "5 AI tools that do hours of work in minutes ⚡ Which one are you trying first? Comment the number 👇\n\nSave this so you don't lose it 🔖\n\n#aitools #productivityhacks #chatgpt #claudeai #studenthacks #worksmarter #techtips #aihacks #smartwork",
+  "scenes": [
+    {"type": "hook", "lines": ["5 AI tools", "that feel", "illegal to know"], "accent": 2, "sub": "(No. 3 saves the most time)", "dur": 3},
+    {"type": "item", "num": 1, "title": "Gamma", "text": "Type one line. Get a full, designed presentation.", "tag": "Bye bye, 3-hour PPTs", "dur": 3.2},
+    {"type": "item", "num": 2, "title": "Perplexity", "text": "Ask anything. Get an answer with sources you can check.", "tag": "Research in seconds", "dur": 3.2},
+    {"type": "item", "num": 3, "title": "NotebookLM", "text": "Upload your PDFs and notes. Chat with them like a tutor.", "tag": "Exam prep = sorted", "dur": 3.2},
+    {"type": "item", "num": 4, "title": "Canva Magic Design", "text": "Describe a poster. Get ready-made designs instantly.", "tag": "No design skills needed", "dur": 3.2},
+    {"type": "item", "num": 5, "title": "Claude", "text": "Paste a messy email. Get a clear, polite reply.", "tag": "Inbox stress = gone", "dur": 3.2},
+    {"type": "cta", "big": "SAVE this", "sub": "you'll need it this week", "pill": "Comment 1-5", "pill_sub": "which one you'll try first", "follow": "Follow for daily AI hacks", "dur": 4}
+  ]
+}
