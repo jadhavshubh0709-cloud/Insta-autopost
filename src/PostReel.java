@@ -68,6 +68,13 @@ public class PostReel {
         params.put("video_url", videoUrl);
         params.put("caption", caption);
         params.put("share_to_feed", "true");
+        // Cover = the hook screen (first scene) once its text is fully on screen.
+        // A custom image can be used instead by adding reels/<date>/cover.jpg.
+        if (Files.exists(dir.resolve("cover.jpg"))) {
+            params.put("cover_url", base + "/reels/" + date + "/cover.jpg");
+        } else {
+            params.put("thumb_offset", env("COVER_OFFSET_MS", "2000"));
+        }
         params.put("access_token", token);
         String created = post(api + "/" + igUserId + "/media", params);
         String containerId = field(created, "id");
