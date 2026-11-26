@@ -1,49 +1,8 @@
-{
- "tag": "OFFICE LIFE",
- "music": "funky",
- "caption": "Appraisal season be like 😅 Which one are you? Comment 1, 2 or 3 👇\n\n#appraisal #officelife #corporatememes #itlife #corporatehumour #relatable #techjobs #smartwork",
+{"tag": "PROMPT #5", "music": "chill",
+ "caption": "Stuck on an error for hours? 😩 Paste it into AI with this prompt and get the cause, the fix and how to avoid it next time.\n\nComment \"PROMPT\" for more developer prompts 📩\n\n#developers #coding #programming #aiprompts #chatgpt #debugging #techtips #smartwork",
  "scenes": [
-  {
-   "type": "hook",
-   "lines": [
-    "Appraisal season",
-    "3 types of",
-    "employees"
-   ],
-   "accent": 0,
-   "dur": 3
-  },
-  {
-   "type": "item",
-   "num": 1,
-   "title": "The Silent Worker",
-   "text": "Did everything all year. Can't remember any of it.",
-   "tag": "“I… worked?”",
-   "dur": 3
-  },
-  {
-   "type": "item",
-   "num": 2,
-   "title": "The Storyteller",
-   "text": "Fixed one typo. Calls it “improving documentation quality by 100%”.",
-   "tag": "Gets the hike",
-   "dur": 3.2
-  },
-  {
-   "type": "item",
-   "num": 3,
-   "title": "The AI-smart one",
-   "text": "Kept a weekly win list and let AI turn it into a clean self-review.",
-   "tag": "Work smart, not hard",
-   "dur": 3.2
-  },
-  {
-   "type": "cta",
-   "big": "Be No. 3",
-   "sub": "follow for the prompt that does it",
-   "pill": "Comment 1, 2 or 3",
-   "pill_sub": "which one are you?",
-   "dur": 4
-  }
- ]
-}
+  {"type": "hook", "lines": ["Stuck on an error", "for 2 hours?", "Let AI explain it"], "accent": 2, "sub": "(developers, save this)", "dur": 3},
+  {"type": "chat", "title": "Copy this prompt", "text": "I'm getting this error in my [language/framework] code: [paste error]. Here is the code: [paste code]. Explain in simple words: 1) what caused it, 2) the exact fix, 3) how to prevent it next time.", "dur": 7},
+  {"type": "result", "title": "AI's version:", "text": "Cause: the list is empty, so index 0 does not exist. Fix: check if the list has items before reading it. Prevent: always handle empty results from the database.", "footer": "Bug fixed in 5 minutes.", "tip": "Tip: paste the full error, not just one line", "dur": 5},
+  {"type": "cta", "big": "SAVE this", "sub": "for your next bug", "pill": "Comment PROMPT", "pill_sub": "for more developer prompts", "follow": "Follow for daily AI hacks", "dur": 4}
+ ]}

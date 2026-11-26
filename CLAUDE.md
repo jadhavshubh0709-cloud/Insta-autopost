@@ -1,6 +1,6 @@
 # SmartWork reel factory (@smartwork.ai.in)
 
-Faceless Instagram page: daily AI hacks + office-life humour. Owner: Shubhangi.
+Faceless Instagram page: daily AI hacks. EVERY reel is about AI (tools, prompts, AI hacks), no pure office-humour reels. Owner: Shubhangi.
 Goal: secondary income (affiliate links, brand deals, prompt PDFs) via consistent daily reels.
 
 ## How posting works (don't touch)
@@ -11,8 +11,8 @@ Goal: secondary income (affiliate links, brand deals, prompt PDFs) via consisten
 
 ## Weekly batch: the whole job
 1. Find the dates to fill: tomorrow through 7 days ahead (Asia/Kolkata). Skip dates that already have `reels/<date>/`.
-2. Take ideas from `content/ideas.md` in order (first unticked ones), keeping the weekly mix:
-   **4 AI reels + 3 office-humour reels**, never two office reels on consecutive days.
+2. Take ideas from `content/ideas.md` in order (first unticked ones). **All 7 reels must be AI reels.**
+   Office, student or career situations are fine only as the setting for an AI tool or prompt.
 3. Write `specs/<date>.json` for each date (format below; copy the style of an existing spec).
 4. Run `python3 tools/make_week.py`. It validates, renders, verifies audio and video, and writes `review/week_sheet.jpg`.
    Fix any reported errors and re-run. Look at the ONE sheet image (not the individual frames) and fix any overflowing text.
@@ -39,8 +39,8 @@ Goal: secondary income (affiliate links, brand deals, prompt PDFs) via consisten
 - * Total length 15-25 s. * Music is one of the 4 tracks in `music/`.
 - * No emoji in on-screen text (they render as boxes). Emoji are fine in captions.
 - * Caption: hook, a comment prompt ("Comment PROMPT" / "Comment 1-3" / "Tag a colleague"), 7-9 hashtags ending `#smartwork`.
-- Music by mood: upbeat = AI tools/hacks, chill = prompts/tips, dramatic = before-vs-after, funky = office humour.
+- Music by mood: upbeat = AI tools/hacks, chill = prompts/tips, dramatic = before-vs-after, funky = light/funny AI reels.
 - Tag numbering: continue from the highest number used in `specs/` (e.g. AI HACK #6, PROMPT #5).
 - Facts: no prices, "free", version numbers or rankings. Describe tools only in general terms, and only name well-known tools.
-- Office humour: relatable, kind, with no real people, companies or insults.
+- Humour (if any): relatable, kind, with no real people, companies or insults, and always tied to an AI tip.
 - Language: simple English, Indian context (INR, Indian names, Diwali, appraisal, standups, WFH).
